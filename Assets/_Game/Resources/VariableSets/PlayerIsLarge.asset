@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6117b6a33e74349895675bcc21f11b6, type: 3}
+  m_Name: PlayerIsLarge
+  m_EditorClassIdentifier: 
+  Variables:
+  - Name: playerSize
+    DataValue: large
+    ObjectValue: {fileID: 8300000, guid: 0cd05648e06f92743be0b81e763f3a7a, type: 3}

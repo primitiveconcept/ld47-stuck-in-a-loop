@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dfa947967e94688a6138573daf9f80a, type: 3}
+  m_Name: PsiFireCode
+  m_EditorClassIdentifier: 
+  PhaseName: BURN_EVERYTHING
+  FireAttack: {fileID: -8410487469919788924, guid: 40e028dff7c28da479dfed8a6cb74a83,
+    type: 3}
+  OnInitialize:
+    m_PersistentCalls:
+      m_Calls: []
+  OnExit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000}
+        m_TargetAssemblyTypeName: StuckInALoop.PsiCode, Assembly-CSharp
+        m_MethodName: RemoveFire
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  Code:
+    Type: 1
+    BreakCondition:
+      VariableName: psiHealth
+      Is: 1
+      Value: 0
+    Statements:
+    - Type: 0
+      InvokeMethod:
+        m_PersistentCalls:
+          m_Calls: []
+      Arguments:
+      - player
+      - BURN
+    - Type: 2
+      InvokeMethod:
+        m_PersistentCalls:
+          m_Calls: []
+      Arguments:
+      - 4
+    - Type: 1
+      InvokeMethod:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 11400000}
+            m_TargetAssemblyTypeName: StuckInALoop.PsiCode, Assembly-CSharp
+            m_MethodName: SummonFire
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+      Arguments:
+      - 3
+    NestedLoops:
+    - Type: 1
+      BreakCondition:
+        VariableName: player
+        Is: 0
+        Value: BURN
+      Statements:
+      - Type: 2
+        InvokeMethod:
+          m_PersistentCalls:
+            m_Calls: []
+        Arguments:
+        - 2
+      - Type: 1
+        InvokeMethod:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 11400000}
+              m_TargetAssemblyTypeName: StuckInALoop.PsiCode, Assembly-CSharp
+              m_MethodName: SpeedUpBlaze
+              m_Mode: 0
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
+        Arguments:
+        - 0.05
+      NestedLoops: []
+      Iterator: 1
+    Iterator: 0

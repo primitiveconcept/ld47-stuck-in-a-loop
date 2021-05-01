@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6599227fd2d94a8d85407ab3c14df213, type: 3}
+  m_Name: SystemsConfig
+  m_EditorClassIdentifier: 
+  Systems:
+  - SystemTypeName: StuckInALoop.PlayerMoveInputSystem, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    UpdateType: 0
+    ExecutionType: 0
+  - SystemTypeName: StuckInALoop.PlayerAttackInputSystem, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    UpdateType: 0
+    ExecutionType: 0
+  - SystemTypeName: StuckInALoop.PlayerInteractionInputSystem, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    UpdateType: 0
+    ExecutionType: 0
+  - SystemTypeName: StuckInALoop.FollowPlayerSystem, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    UpdateType: 0
+    ExecutionType: 0
+  - SystemTypeName: StuckInALoop.MoveSystem, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    UpdateType: 1
+    ExecutionType: 0
+  - SystemTypeName: StuckInALoop.Physics2DSystem, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    UpdateType: 1
+    ExecutionType: 0
+  - SystemTypeName: StuckInALoop.BoxCollision2DSystem, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    UpdateType: 0
+    ExecutionType: 0
